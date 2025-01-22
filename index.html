@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Munchkin Store</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--<script src="./js/script.js" defer></script>-->
+    <script type="module" src="./main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Munchkin Store</h1>
+      <form id="filters">
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="beauty">Beauty</option>
+          <option value="fragrances">Fragrance</option>
+          <option value="furniture">Furniture</option>
+          <option value="groceries">Groceries</option>
+          <option value="under10">Under 10$</option>
+        </select>
+
+        <select id="sortFilter">
+          <option id="lowPrice" value="lowPrice">Lowest Price</option>
+          <option id="highPrice" value="highPrice">Highest Price</option>
+          <option id="lowRating" value="lowRating">Lowest Rating</option>
+          <option id="highRating" value="highRating" selected>
+            Highest Rating
+          </option>
+        </select>
+        <button id="show-products">Show products</button>
+      </form>
+    </header>
+    <main>
+      <div id="productContainer"></div>
+    </main>
+  </body>
+</html>
